@@ -1,5 +1,7 @@
 # File Chat
 
+A user-friendly wraper of LLM to help you find, understand, and query your files.
+
 ## Get Started
 ### Setup Environment
 
@@ -39,9 +41,13 @@ $env:OPENAI_API_KEY="..."
     - `Gettysburg-Address.md` is the famous Gettysburg Address by Abraham Lincoln.
     - `langchain-README.md` is the README file from [LangChain](https://github.com/hwchase17/langchain).
 
+![screenshot of preprocessing sample files](docs/images/build.png)
+
 ### Semantic Search
 - Search for files related to a topic semantically.
 - Command: `python main.py search {topic}`
+
+![screenshot of semantically search for files related to "politics"](docs/images/search.png)
 
 ### Summarization
 - Summarize a file.
@@ -49,9 +55,13 @@ $env:OPENAI_API_KEY="..."
   - `file` can be the file name or the absolute path to the file.
   - Note that `file` is fuzzily matched with the absolute paths, so you don't have to input the exact name or path.
 
+![screenshot of summarizing Gettysburg Address"](docs/images/summarize.png)
+
 ### Natural Language Query
 - Query facts in your files using natural language.
 - Command: `python main.py query {question}`
+
+![screenshot of querying the books I read"](docs/images/query.png)
 
 ### Chat
 - Chat with an AI assistant that can access your files.
@@ -60,6 +70,8 @@ $env:OPENAI_API_KEY="..."
   - Find related files
   - Summarize a file
   - Query facts in the files
+
+![screenshot of chatting"](docs/images/chat.png)
 
 ## Credits
 - This project is built with [LangChain](https://github.com/hwchase17/langchain), an awesome tool that abstracts the way we invoke LLMs.
